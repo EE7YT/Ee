@@ -51,11 +51,22 @@ local h = page1:addSection("Weapons")
  
  -- LEFT CTRL
  -- LEFT ALT
-    h:addButton("AimLock", function() loadstring(game:GetObjects('rbxassetid://340856112')[1].Source)()end)
+    h:addButton("AimLock With ESP", function() loadstring(game:GetObjects('rbxassetid://340856112')[1].Source)()end)
  
     h:addButton("No Reloaad { Testing }", function() loadstring(game:HttpGet("https://pastebin.com/raw/YJ7pzBZh", true))()end)
  
     h:addButton("ESP and Aimbot", function() loadstring(game:HttpGet("https://raw.githubusercontent.com/EE7YT/Ee/main/New%20Text%20Document%20(2).txt", true))()end)
+ 
+    h:addButton("AimLock only", function() getgenv().AimPart = "HumanoidRootPart" -- For R15 Games: {UpperTorso, LowerTorso, HumanoidRootPart, Head} | For R6 Games: {Head, Torso, HumanoidRootPart}
+getgenv().AimlockToggleKey = "Y" -- Toggles Aimbot On/Off 
+getgenv().AimRadius = 50 -- How far away from someones character you want to lock on at
+getgenv().ThirdPerson = false -- Locking onto someone in your Third Person POV
+getgenv().FirstPerson = true -- Locking onto someone in your First Person POV
+getgenv().TeamCheck = false -- Check if Target is on your Team (True means it wont lock onto your teamates, false is vice versa) (Set it to false if there are no teams)
+getgenv().PredictMovement = true -- Predicts if they are moving in fast velocity (like jumping) so the aimbot will go a bit faster to match their speed 
+getgenv().PredictionVelocity = 10 -- The speed of the PredictMovement feature 
+ 
+loadstring(game:HttpGet("https://pastebin.com/raw/jSmrycKE", true))()end)
 --{ Two page }--
  
 local page2 = venyx:addPage("ESP", 5012544693)
