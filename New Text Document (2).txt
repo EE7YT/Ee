@@ -13,12 +13,7 @@ local UserInputService = game:GetService("UserInputService")
 local RunService = game:GetService("RunService")
 
 -- Environment 
-local getrawmetatable = getrawmetatable or false
-local mousemove = mousemove or mousemoverel or mouse_move or false
-local getsenv = getsenv or false
-local listfiles = listfiles or listdir or syn_io_listdir or false
-local isfolder = isfolder or false
-local hookfunc = hookfunc or hookfunction or replaceclosure or false
+
 
 
 Hint.Text = "Hexagon | Setting up configuration settings..."
